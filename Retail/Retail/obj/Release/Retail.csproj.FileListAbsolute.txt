@@ -238,8 +238,15 @@ E:\GitHub\OnlineRetail\Retail\Retail\bin\System.Web.WebPages.Deployment.xml
 E:\GitHub\OnlineRetail\Retail\Retail\bin\System.Web.WebPages.Razor.xml
 E:\GitHub\OnlineRetail\Retail\Retail\bin\Antlr3.Runtime.pdb
 E:\GitHub\OnlineRetail\Retail\Retail\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\GitHub\OnlineRetail\Retail\Retail\obj\Release\Retail.csprojAssemblyReference.cache
 E:\GitHub\OnlineRetail\Retail\Retail\obj\Release\Retail.csproj.CoreCompileInputs.cache
 E:\GitHub\OnlineRetail\Retail\Retail\obj\Release\Retail.csproj.CopyComplete
 E:\GitHub\OnlineRetail\Retail\Retail\obj\Release\Retail.dll
 E:\GitHub\OnlineRetail\Retail\Retail\obj\Release\Retail.pdb
+E:\GitHub\OnlineRetail\Retail\Retail\bin\Moq.dll
+E:\GitHub\OnlineRetail\Retail\Retail\bin\System.Threading.Tasks.Extensions.dll
+E:\GitHub\OnlineRetail\Retail\Retail\bin\Castle.Core.dll
+E:\GitHub\OnlineRetail\Retail\Retail\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\GitHub\OnlineRetail\Retail\Retail\bin\Moq.xml
+E:\GitHub\OnlineRetail\Retail\Retail\bin\System.Threading.Tasks.Extensions.xml
+E:\GitHub\OnlineRetail\Retail\Retail\bin\Castle.Core.xml
+E:\GitHub\OnlineRetail\Retail\Retail\bin\System.Runtime.CompilerServices.Unsafe.xml

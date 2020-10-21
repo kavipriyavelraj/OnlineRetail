@@ -2,10 +2,11 @@
 using Retail.Models;
 using System;
 using System.Collections.Generic;
+using static Retail.BLL.OrderBll;
 
 namespace Retail.BLL
 {
-    public class OrderBll
+    public class OrderBll : IOrder
     {
         private OrderDAL _OrderDAL = null;
 
@@ -17,16 +18,15 @@ namespace Retail.BLL
         }
 
         #endregion
-
-
-        #region
+        
+        #region Methods
 
         /// <summary>
         /// Order Product
         /// </summary>
         /// <param name="lstProductModel"></param>
         /// <returns></returns>
-        public bool OrderProduct(List<ProductModel> lstProductModel)
+        public virtual bool OrderProduct(List<ProductModel> lstProductModel)
         {
             bool RetValue = false;
             bool OrderRetValue = false;
@@ -85,7 +85,7 @@ namespace Retail.BLL
         /// </summary>
         /// <param name="OrderId"></param>
         /// <returns></returns>
-        public bool CancelOrder(int OrderId)
+        public virtual bool CancelOrder(int OrderId)
         {
             bool RetValue = false;
             int OrderCount = 0;
@@ -108,5 +108,14 @@ namespace Retail.BLL
 
         #endregion
 
+        #region Interface
+
+        public interface IOrder
+        {
+            bool OrderProduct(List<ProductModel> lstProductModel);
+            bool CancelOrder(int OrderId);
+        }
+
+        #endregion
     }
 }

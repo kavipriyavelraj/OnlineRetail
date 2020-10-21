@@ -7,11 +7,9 @@ namespace Retail.Models
 {
     public class ProductModel
     {
-        public int ProductId;
-        public string ProductName;
-        public Double ProductAmount;
-        public int Quantity;
-        //public DateTime CreatedDate;
-        //public DateTime UpdatedDate;
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public Double ProductAmount { get; set; }
+        public int Quantity { get; set; }
     }    
 }

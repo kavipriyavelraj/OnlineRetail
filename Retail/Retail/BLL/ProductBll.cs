@@ -2,16 +2,11 @@
 using Retail.Models;
 using System;
 using System.Collections.Generic;
-using System.Data.Common;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web;
-using System.Web.Http;
+using static Retail.BLL.ProductBll;
 
 namespace Retail.BLL
 {   
-    public class ProductBll
+    public class ProductBll : IProduct
     {
         private ProductDAL _ProductDAL = null;
 
@@ -46,7 +41,7 @@ namespace Retail.BLL
         /// </summary>
         /// <param name="objProduct"></param>
         /// <returns></returns>
-        public bool AddProduct(ProductModel objProduct)
+        public virtual bool AddProduct(ProductModel objProduct)
         {
             bool RetValue = false;
             try
@@ -72,7 +67,7 @@ namespace Retail.BLL
         /// </summary>
         /// <param name="objProduct"></param>
         /// <returns></returns>
-        public bool UpdateProduct(ProductModel objProduct)
+        public virtual bool UpdateProduct(ProductModel objProduct)
         {
             bool RetValue = false;
             try
@@ -97,7 +92,7 @@ namespace Retail.BLL
         /// </summary>
         /// <param name="ProductId"></param>
         /// <returns></returns>
-        public bool DeleteProduct(int ProductId)
+        public virtual bool DeleteProduct(int ProductId)
         {
             bool RetValue = false;
             try
@@ -225,5 +220,15 @@ namespace Retail.BLL
         }
         #endregion
 
+        #region Interface
+
+        public interface IProduct
+        {
+            bool AddProduct(ProductModel objProduct);
+            bool UpdateProduct(ProductModel objProduct);
+            bool DeleteProduct(int ProductId);
+        }
+
+        #endregion
     }
 }

@@ -1,24 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Retail.Models
 {
     public class OrderModel
     {
-        public int OrderId;
-        public Double OrderAmount;
-        public string OrderStatus;
-        public DateTime OrderDate;
-        public DateTime UpdatedDate;                
+        public int OrderId { get; set; }
+        public Double OrderAmount { get; set; }
+        public string OrderStatus { get; set; }
+        public DateTime OrderDate { get; set; }
+        public DateTime UpdatedDate { get; set; }
     }
 
     public class OrderItems
     {
-        public int ItemId;
-        public int OrderId;
-        public int ProductId;
-        public int Quantity;        
+        public int ItemId { get; set; }
+        public int OrderId { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
     }   
 }

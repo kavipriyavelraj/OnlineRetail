@@ -4,8 +4,6 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 
 namespace Retail.DAL
 {
@@ -47,13 +45,7 @@ namespace Retail.DAL
                                 objProduct.ProductAmount = Convert.ToDouble(sqlDataReader["ProductAmount"]);
 
                             if (sqlDataReader["Quantity"] != DBNull.Value)
-                                objProduct.Quantity = Convert.ToInt32(sqlDataReader["Quantity"]);
-
-                            //if (sqlDataReader["CreatedDate"] != DBNull.Value)
-                            //    objProduct.CreatedDate = Convert.ToDateTime(sqlDataReader["CreatedDate"]);
-
-                            //if (sqlDataReader["UpdatedDate"] != DBNull.Value)
-                            //    objProduct.UpdatedDate = Convert.ToDateTime(sqlDataReader["UpdatedDate"]);
+                                objProduct.Quantity = Convert.ToInt32(sqlDataReader["Quantity"]);                            
 
                             objProductList.Add(objProduct);
                         }
@@ -147,10 +139,7 @@ namespace Retail.DAL
                                 objProduct.ProductAmount = Convert.ToDouble(sqlDataReader["ProductAmount"]);
 
                             if (sqlDataReader["Quantity"] != DBNull.Value)
-                                objProduct.Quantity = Convert.ToInt32(sqlDataReader["Quantity"]);
-
-                            //if (sqlDataReader["CreatedDate"] != DBNull.Value)
-                            //    objProduct.CreatedDate = Convert.ToDateTime(sqlDataReader["CreatedDate"]);
+                                objProduct.Quantity = Convert.ToInt32(sqlDataReader["Quantity"]);                           
                         }
 
                         sqlDataReader.Close();
@@ -206,9 +195,7 @@ namespace Retail.DAL
 
                             if (sqlDataReader["Quantity"] != DBNull.Value)
                                 objProduct.Quantity = Convert.ToInt32(sqlDataReader["Quantity"]);
-
-                            //if (sqlDataReader["CreatedDate"] != DBNull.Value)
-                            //    objProduct.CreatedDate = Convert.ToDateTime(sqlDataReader["CreatedDate"]);
+                           
                         }
 
                         sqlDataReader.Close();
